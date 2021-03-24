@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+  font-family: 'Proza Libre', sans-serif;
+}
+/* Header Styles */
+.header {
+  background-image: url(../images/GreenGrid.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 500px;
+  height: 250px;
+  background-position: top;
+}
+#pageTopic {
+  text-align: inline-flex;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 22px;
+}
+/* Primary Color */
+.colorContainer {
+  display: inline-block;
+  margin: 15px;
+}
+
+.dot {
+  height: 150px;
+  width: 150px;
+  background-color: #bbb;
+  border-radius: 100%;
+  display: center;
+
+}
+
+.hexCode {
+   padding: 15px;
+   text-align: center;
+   border-top: none;
+   border-bottom-left-radius: 7px;
+   border-bottom-right-radius: 7px;
+   font-family: 'Poppins', sans-serif;
+}
+.hunterGreen {
+  background-color: #101A0E;
+}
+.funGreen {
+  background-color: #02592E;
+}
+.hokeyPokey {
+  background-color: #D99D32;
+}
+.brownRust {
+  background-color: #AD5D40;
+}
+
+.spanishGreen {
+  background-color: #84957F;
+}
+.clamShell {
+  background-color: #D9C1B8;
+}
+.lightBlue {
+  background-color: #EDEDED;
+}
+.lightGreen {
+  background-color: #8ABE48;
+}
+
+.gallery {
+  background-color: #EDEDED;
+}
+
+.willowBrook {
+  background-color: #DBEBD8;
+}
+
+.zobra {
+  background-color: #A0928C;
+}
+
+.spicyMix {
+  background-color: #7E503F;
+}
+
+/* Typography CSS */
+
+.type_container {
+   display: inline-block;
+   margin: 45px;
+}
+
+.type_container1 {
+  display: inline-block;
+  margin: 45px;
+  font: "Poppins", Poppins, serif;;
+}
+
+.large {
+    font-size: 66px;
+    margin-bottom: 15px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.light {
+    font-weight: 100;
+}
+.regular {
+    font-weight: 500;
+}
+.bold {
+    font-weight: 700;
+}
+.typography h1 {
+    font-weight: 900;
+    font-size: 50px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+.typography h2 {
+    font-weight: 700;
+    font-size: 42px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+.typography h3 {
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+.typography h4 {
+    font-size: 26px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+/* UI Elements */
+.button {
+   display: inline-block;
+   padding: 15px;
+   margin: 15px;
+   width: 150px;
+   font-size: 14px;
+   text-align: center;
+   color: white;
+}
+.primary {
+  background-color: #02592E;
+}
+.success {
+  background-color: #AD5D40;
+}
+
+.dangerActive {
+  background-color: #84957F;
+}
+.warningActive {
+  background-color: #D9C1B8;
+}
+
+.sectionHead {
+  border-bottom: 2px solid #84957F;
+  margin-left: 25px;
+}
+
+h3 {
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+  box-sizing: border-box;
+
+}
+
+.container {
+  width: 60%;
+  margin: 2rem auto; 
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1.5rem; 
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gallery__item--3 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 6;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+}
+
+.gallery__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4;  */
+  /* grid-row: 3 / span 3; */
+}
+
+.gallery__item--5 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 9;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+.gallery__item--6 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 9;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
